@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Juan Carlos Coche</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Juan Carlos Coche</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Volver al CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Portafolio de Proyectos</h1>
+            
+            <div class="proyecto mb-5">
+                <h3 class="text-center mb-4">Curriculum Vitae</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/cv1.png" alt="CV imagen 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/cv2.png" alt="CV imagen 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/cv3.png" alt="CV imagen 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto mb-5">
+                <h3 class="text-center mb-4">Landing Page</h3>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/landing 1.png" alt="Landing 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/landing 2.png" alt="Landing 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto mb-5">
+                <h3 class="text-center mb-4">Proyecto Iguana</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/iguana 1.png" alt="Iguana 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/iguana 2.png" alt="Iguana 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/iguana 3.png" alt="Iguana 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto mb-5">
+                <h3 class="text-center mb-4">Proyecto Cuppon</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/cuppon 1.png" alt="Cuppon 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/cuppon 2.png" alt="Cuppon 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="img-fluid imagen-expandible" src="./assets/img/cuppon 3.png" alt="Cuppon 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="expandedImage" src="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showImage(src) {
+            document.getElementById('expandedImage').src = src;
+        }
+    </script>
+</body>
+</html>
